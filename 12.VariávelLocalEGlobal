@@ -1,0 +1,24 @@
+def func1():
+    global x
+    x = 10
+    print(f'Função func1 - x = {x}')
+
+
+def func2():
+    global x
+    x = 20
+    print(f'Função func2 - x = {x}')
+
+
+x = 0
+func1()
+func2()
+print(f'Programa principal - x = {x}')
+
+"""
+   Variáveis Locais podem ser : 
+   Dinâmicas da pilha => Quando são vinculadas ao armazenamento no início da execução do subprograma e desvinculada quando essa execução termina.
+   Estáticas => São vinculadas as células de memória antes do início da execução do programa e permanecem vinculadas a essas mesmas células até que a execução do programa termine.
+   Em python as variáveis locais são dinâmicas da pilha.
+   Para referênciar uma variável global dentro do escopo, utilizamos a palavra 'global'.
+"""
