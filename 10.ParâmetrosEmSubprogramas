@@ -1,0 +1,13 @@
+def taximetro(distancia, multiplicador=1):
+    largada = 3
+    km_rodado = 2
+    valor = (largada + distancia * km_rodado) * multiplicador
+    return valor
+
+
+pagamento = taximetro(3.5)
+print(pagamento)
+
+"""Parâmetros formais / Parâmetros reais
+   Nesse a chamada da função recebe apenas 1 pârametro real(argumento) e o Segundo parâmetro formal tem recebe um valor padrão de 1
+"""
