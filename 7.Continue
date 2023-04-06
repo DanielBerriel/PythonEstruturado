@@ -1,0 +1,16 @@
+#Exemplo 1
+for num in range(1, 11):
+    if num == 5:
+        continue
+    else:
+        print(num)
+print('Laço encerrado')
+
+
+#Exemplo 2 (Diferença entre Continue e Break)
+for num in range(1, 11):
+    if num == 5:
+        break
+    else:
+        print(num)
+print('Laço encerrado')
